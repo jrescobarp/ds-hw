@@ -28,7 +28,7 @@ class TestDistrictMargins(unittest.TestCase):
 
     def test_margins(self):
         lines = list(DictReader(kALASKA))
-        self.assertAlmostEqual(10.0, district_margins(lines)[0])
+        self.assertAlmostEqual(10.0, district_margins(lines)['0'])
 
     def test_states(self):
         lines = list(DictReader(kALASKA))
